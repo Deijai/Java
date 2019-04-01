@@ -6,24 +6,26 @@ public class Funcoes {
 		
 		//Funçoes
 		int qtd = 0;
-		int ini = 0;
-		String frutas = null;
+		String frutas[];
 		
 		System.out.println("Informe a quantidade de frutas para cadastrar:");
 		
 		Scanner teclado = new Scanner(System.in);
 		qtd = Integer.parseInt(teclado.nextLine());
 		
-		if (qtd != 0) {
+		frutas = new String[qtd];
+		
+		if (qtd > 0) {
 			
-			while (ini < qtd) {
-				System.out.println("Informe a fruta");
-				frutas = teclado.nextLine();
-				System.out.println(frutas);
-				ini++;		
-				
+			for (int i = 0; i < qtd; i++) {
+				System.out.println("Informe a fruta "+(i + 1));
+				frutas[i] = teclado.nextLine();	
 			}
 			
+			System.out.println(qtd);
+			for (int i = qtd; i > 0; i--) {
+				System.out.println(frutas[i - 1]);
+			}
 			
 		}
 		
