@@ -7,8 +7,7 @@ public class Aula01 {
 		String helloWorld = "Hello World!";
 		
 		System.out.println(helloWorld);
-		
-		//adicionando comentarios
+
 
 	}
 
